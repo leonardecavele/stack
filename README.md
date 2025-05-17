@@ -25,5 +25,5 @@ Instructions:
 
 ## ki fé kwa
 
-les ar... : Instructions/Executeur
-les rac... : Lexeur/Parseur
+- les ar... : Instructions/Executeur
+- les rac... : Lexeur/Parseur
