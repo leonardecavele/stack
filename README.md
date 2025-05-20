@@ -13,8 +13,8 @@ Instructions:
 - MUL: multiplie la dernière valeure avec celle d'avant
 - DIV: divise la dernière valeure avec celle d'avant
 
-- PRNT: affiche une valeur de la stack. sans paramètres, la dernière est affichée, sinon, celle indiquée est affichée
-- DUMP: affiche toute la stack
+- PRT: affiche une valeur de la stack. sans paramètres, la dernière est affichée, sinon, celle indiquée est affichée
+- DMP: affiche toute la stack
 
 ## Etapes
 
