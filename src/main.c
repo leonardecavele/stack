@@ -1,10 +1,17 @@
 #include "instructions.h"
 #include "parser.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(void)
+int main(int argc, char *argv[])
 {
-	FILE *file = fopen("input/test3.txt", "r");
+	if (argc != 2)
+	{
+		printf("Usage: stack_machine [FILE]");
+		return EXIT_FAILURE;
+	}
+
+	FILE *file = fopen(argv[1], "r");
 	if (!file)
 	{
 		perror("fopen");
