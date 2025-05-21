@@ -4,7 +4,8 @@ Taille de stack 8x64 intègres signés
 
 Instructions:
 
-- PUSH: ajoute une valeur sur la stack
+- NOP: pas d'instruction
+- PSH: ajoute une valeur sur la stack
 - POP: retire la dernière valeur
 - CLR: vide la stack
 

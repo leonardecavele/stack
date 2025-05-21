@@ -3,14 +3,16 @@
 
 typedef enum
 {
-	ADD = 0,
-	POP = 1,
-	CLR = 2,
-	SUB = 3,
-	MUL = 4,
-	DIV = 5,
-	PRT = 6,
-	DMP = 7,
+	NOP = 0,
+	PSH = 1,
+	POP = 2,
+	CLR = 3,
+	ADD = 4,
+	SUB = 5,
+	MUL = 6,
+	DIV = 7,
+	PRT = 8,
+	DMP = 9,
 } COMMAND;
 
 typedef struct

@@ -1,0 +1,5 @@
+NOP 0
+PSH 1
+            CLR 3
+A   D          D    4
+addddddddddd 7677
