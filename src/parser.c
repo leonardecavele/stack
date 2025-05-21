@@ -152,19 +152,19 @@ INSTR *parse_program(FILE *file, int *count)
 	INSTR *instructions = NULL;
 	char buffer[LINE_LENGTH + 1];
 
-	int capacity, i, line_count, c;
+	int capacity, i, c, line_count;
 	*count = i = capacity = line_count = 0;
 	
 	while((c = fgetc(file)) != EOF)
 	{
 		if(c == '\n')
 		{
-			line_count++;
 			end_line(&i, count, &capacity, buffer, &instructions);
+			line_count++;
 		}
-		if(i >= LINE_LENGTH)
+		else if(i >= LINE_LENGTH)
 		{
-			fprintf(stderr, "Line %d exceeds %d character limit.\n", line_count, LINE_LENGTH);
+			fprintf(stderr, "line length (%d) exceeded at line %d", LINE_LENGTH, line_count + 1);
 			exit(EXIT_FAILURE);
 		}
 		buffer[i++] = c;

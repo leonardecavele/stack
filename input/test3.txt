@@ -1,7 +1,7 @@
 ckozdkapazkdzokde 000000
 ADDDDDD 121
 a Alp aa 11
-SUB                                                           4
+SUB                          4
 444 ADD 1
 DMP DMP DMP
-DMP 9
+DMP 9                                                   3
