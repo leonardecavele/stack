@@ -87,45 +87,25 @@ INSTR *parse_line(char *buffer)
 	operand[a] = '\0';
 
 	if(strcmp(opcode, "NOP") == 0)
-	{
 		instr->num = NOP;
-	}
 	else if(strcmp(opcode, "PSH") == 0)
-	{
 		instr->num = PSH;
-	}
 	else if(strcmp(opcode, "POP") == 0)
-	{
 		instr->num = POP;
-	}
 	else if(strcmp(opcode, "CLR") == 0)
-	{
 		instr->num = CLR;
-	}
 	else if(strcmp(opcode, "ADD") == 0)
-	{
 		instr->num = ADD;
-	}
 	else if(strcmp(opcode, "SUB") == 0)
-    {
         instr->num = SUB;
-    }
     else if(strcmp(opcode, "MUL") == 0)
-    {
         instr->num = MUL;
-    }
     else if(strcmp(opcode, "DIV") == 0)
-    {
         instr->num = DIV;
-    }
 	else if(strcmp(opcode, "PRT") == 0)
-    {
         instr->num = PRT;
-    }
     else if(strcmp(opcode, "DMP") == 0)
-    {
         instr->num = DMP;
-    }
     else
 		return NULL;
 
