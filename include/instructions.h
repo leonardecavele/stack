@@ -1,6 +1,8 @@
 #ifndef INSTRUCTIONS_H
 #define INSTRUCTIONS_H
 
+#include "stack.h"
+
 typedef enum
 {
 	NOP = 0,
@@ -21,5 +23,23 @@ typedef struct
 	int arg;
 	int has_arg;
 } INSTR;
+
+int	inst_push (t_stack *stack, int value);
+
+int	inst_pop (t_stack *stack);
+
+int	inst_clear (t_stack *stack);
+
+int	inst_add (t_stack *stack);
+
+int	inst_sub (t_stack *stack);
+
+int	inst_mul (t_stack *stack);
+
+int	inst_div (t_stack *stack);
+
+int	inst_print (t_stack *stack, int arg);
+
+int	inst_dump (t_stack *stack);
 
 #endif

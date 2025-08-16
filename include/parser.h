@@ -6,13 +6,13 @@
 
 void add_instr(INSTR **instructions, int *count, int *capacity, INSTR *instr);
 
-int is_valid(char *buffer);
-
 void to_uppercase(char *str);
 
-INSTR *parse_line(char *buffer);
-
 void end_line(int *i, int *count, int *capacity, char *buffer, INSTR **instructions);
+
+int is_valid(char *buffer);
+
+INSTR *parse_line(char *buffer);
 
 INSTR *parse_program(FILE *file, int *count);
 

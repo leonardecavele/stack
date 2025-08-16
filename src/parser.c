@@ -134,7 +134,7 @@ INSTR *parse_program(FILE *file, int *count)
 
 	int capacity, i, c, line_count;
 	*count = i = capacity = line_count = 0;
-	
+
 	while((c = fgetc(file)) != EOF)
 	{
 		if(c == '\n')
